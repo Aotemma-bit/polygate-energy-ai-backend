@@ -1,0 +1,41 @@
+{
+  "model": "RandomForestClassifier",
+  "dataset": "UCI AI4I 2020 Predictive Maintenance Dataset",
+  "dataset_rows": 10000,
+  "failure_cases": 339,
+  "non_failure_cases": 9661,
+  "test_size": 0.2,
+  "random_state": 42,
+  "features": [
+    "Air temperature [K]",
+    "Process temperature [K]",
+    "Rotational speed [rpm]",
+    "Torque [Nm]",
+    "Tool wear [min]"
+  ],
+  "target": "Machine failure",
+  "metrics": {
+    "precision": 0.5667,
+    "recall": 0.75,
+    "f1": 0.6456,
+    "roc_auc": 0.9714
+  },
+  "confusion_matrix": [
+    [
+      1893,
+      39
+    ],
+    [
+      17,
+      51
+    ]
+  ],
+  "feature_importance": {
+    "Air temperature [K]": 0.082634,
+    "Process temperature [K]": 0.054188,
+    "Rotational speed [rpm]": 0.311528,
+    "Torque [Nm]": 0.329766,
+    "Tool wear [min]": 0.221884
+  },
+  "model_scope": "Benchmark model trained on the synthetic UCI AI4I dataset. This is not a validated field failure predictor."
+}

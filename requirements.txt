@@ -1,0 +1,12 @@
+fastapi==0.141.1
+uvicorn==0.53.0
+supabase==2.31.0
+openai==3.13.0
+httpx
+python-dotenv
+pydantic
+pypdf==6.18.1
+pandas
+scikit-learn
+joblib
+shap==0.52.0

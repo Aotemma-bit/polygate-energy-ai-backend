@@ -1,0 +1,68 @@
+{
+  "model": "RandomForestClassifier",
+  "dataset": "UCI AI4I 2020 Predictive Maintenance Dataset",
+  "dataset_rows": 10000,
+  "failure_cases": 339,
+  "non_failure_cases": 9661,
+  "cross_validation": {
+    "method": "5-fold StratifiedKFold",
+    "shuffle": true,
+    "random_state": 42,
+    "folds": [
+      {
+        "fold": 1,
+        "roc_auc": 0.9819,
+        "precision": 0.6023,
+        "recall": 0.791,
+        "f1": 0.6839
+      },
+      {
+        "fold": 2,
+        "roc_auc": 0.9758,
+        "precision": 0.5833,
+        "recall": 0.8235,
+        "f1": 0.6829
+      },
+      {
+        "fold": 3,
+        "roc_auc": 0.9802,
+        "precision": 0.6812,
+        "recall": 0.6912,
+        "f1": 0.6861
+      },
+      {
+        "fold": 4,
+        "roc_auc": 0.97,
+        "precision": 0.5918,
+        "recall": 0.8529,
+        "f1": 0.6988
+      },
+      {
+        "fold": 5,
+        "roc_auc": 0.9625,
+        "precision": 0.5696,
+        "recall": 0.6618,
+        "f1": 0.6122
+      }
+    ],
+    "summary": {
+      "roc_auc": {
+        "mean": 0.9741,
+        "std": 0.0071
+      },
+      "precision": {
+        "mean": 0.6056,
+        "std": 0.0392
+      },
+      "recall": {
+        "mean": 0.7641,
+        "std": 0.0748
+      },
+      "f1": {
+        "mean": 0.6728,
+        "std": 0.0308
+      }
+    }
+  },
+  "scope": "Cross-validation benchmark on the synthetic UCI AI4I dataset. Results do not establish field performance."
+}
